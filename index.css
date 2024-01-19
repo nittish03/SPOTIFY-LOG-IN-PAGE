@@ -16,10 +16,11 @@ body{
     border-radius: 10px;
     background-color: #161616;
     padding-top: 40px;
-    box-shadow: 0 0 5px #3eff8c,
-                0 0 25px #3eff8c,
-                0 0 50px #3eff8c,
-                0 0 100px #3eff8c;
+    animation:anime 2s 0s ease-in-out  infinite  normal;
+    animation-direction: alternate-reverse;
+    transition: 2s;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
 
 }
 input{
@@ -32,12 +33,21 @@ input{
     cursor: blink;
     color: white;
 }
+#checkbox{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    position: relative;
+    right: 32px;
+}
 #mail{
     margin-top: 30px;
     margin-bottom: 10px;
 }
 #password{
-    margin-bottom: 10px;
 }
 a{
     text-decoration: none;
@@ -59,4 +69,18 @@ button{
     border-radius: 8px;
     font-size: 14px;
     margin-bottom: 10px;
+}
+@keyframes anime{
+    0%{
+        box-shadow: 0 0 1px #3eff8c,
+        0 0 5px #3eff8c,
+        0 0 10px #3eff8c,
+        0 0 15px #3eff8c;
+    }
+    100%{
+        box-shadow: 0 0 5px #3eff8c,
+        0 0 25px #3eff8c,
+        0 0 50px #3eff8c,
+        0 0 100px #3eff8c;
+    }
 }
