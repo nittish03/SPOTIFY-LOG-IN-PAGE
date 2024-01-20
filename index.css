@@ -16,7 +16,7 @@ body{
     border-radius: 10px;
     background-color: #161616;
     padding-top: 40px;
-    animation:anime 2s 0s ease-in-out  infinite  normal;
+    animation:anime 4s 0s ease-in-out  infinite  normal;
     animation-direction: alternate-reverse;
     transition: 2s;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
@@ -56,17 +56,56 @@ a{
 h1{
     color: #3eff8c;
     height: 8px;
+    animation:h1 4s 0s ease-in-out  infinite  normal;
+    animation-direction: alternate-reverse;
+    transition: 2s;
+
 }
 h3{
     color: #cccccc;
 }
 button{
     background-color: #3eff8c;
+    font-weight: bold;
     height: 32px;
     width: 173px;
     border-radius: 8px;
     font-size: 14px;
     margin-bottom: 10px;
+    animation:button 4s 0s ease-in-out  infinite  normal;
+    animation-direction: alternate-reverse;
+    transition: 2s;
+
+}
+@keyframes button{
+    0%{
+background-color: #3eff8c;
+    }
+    33%{
+        background-color: #3eff8c;
+    }
+    66%{
+        
+        background-color: aqua;
+    }
+    100%{
+background-color: aqua;
+    }
+}
+@keyframes h1{
+    0%{
+color: #3eff8c;
+    }
+    33%{
+        color: #3eff8c;
+    }
+    66%{
+        color: aqua;
+
+    }
+    100%{
+color: aqua;
+    }
 }
 @keyframes anime{
     0%{
@@ -74,11 +113,28 @@ button{
         0 0 5px #3eff8c,
         0 0 10px #3eff8c,
         0 0 15px #3eff8c;
+    
     }
-    100%{
-        box-shadow: 0 0 5px #3eff8c,
+    33%{
+       box-shadow: 0 0 5px #3eff8c,
         0 0 25px #3eff8c,
         0 0 50px #3eff8c,
         0 0 100px #3eff8c;
+
+    }
+    66%{
+        box-shadow: 0 0 1px aqua,
+        0 0 5px aqua,
+        0 0 10px aqua,
+        0 0 15px aqua;
+
+    }
+
+    100%{ 
+        box-shadow: 0 0 5px aqua,
+        0 0 25px aqua,
+        0 0 50px aqua,
+        0 0 100px aqua;
+
     }
 }
