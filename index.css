@@ -1,83 +1,154 @@
-body{
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base Styles */
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #212121;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
 }
-#container{
+
+#container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    padding: 20px;
     border-radius: 10px;
-    background-color: #161616;
-    padding-top: 40px;
-    animation:anime 4s 0s ease-in-out  infinite  normal;
-    animation-direction: alternate-reverse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: anime 4s 0s ease-in-out infinite normal;
     transition: 2s;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-
-
 }
-input{
-    border: 1px solid white;
-    background-color: #161616;
+
+input {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
     border-radius: 5px;
-    height: 25px;
-    font-size: 12px;
-    padding-left: 17px;
-    cursor: blink;
-    color: white;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
-#checkbox{
-    color: white;
+#cb{
+    height: 20px;
+}
+#checkbox {
+    color: #666666;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    font-size: 12px;
-    margin-bottom: 10px;
-    position: relative;
-    right: 32px;
+    font-size: 10px;
+    margin: 10px 0;
 }
-#mail{
-    margin-top: 30px;
+
+#mail {
     margin-bottom: 10px;
 }
-a{
+
+a {
     text-decoration: none;
-    color: #555555;
+    color: #8e44ad;
     font-size: 14px;
+    margin-top: 10px;
 }
 
-h1{
-    color: #3eff8c;
-    height: 8px;
-    animation:h1 4s 0s ease-in-out  infinite  normal;
-    animation-direction: alternate-reverse;
+h1 {
+    color: #8e44ad;
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: h1 4s 0s ease-in-out infinite normal;
     transition: 2s;
+}
 
+h3 {
+    color: #666666;
+    margin-bottom: 20px;
 }
-h3{
-    color: #cccccc;
-}
-button{
-    background-color: #3eff8c;
+
+button {
+    background-color: #8e44ad;
+    color: #ffffff;
     font-weight: bold;
-    height: 32px;
-    width: 173px;
+    height: 40px;
+    width: 100%;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
-    animation:button 4s 0s ease-in-out  infinite  normal;
-    animation-direction: alternate-reverse;
+    border: none;
+    cursor: pointer;
+    animation: button 4s 0s ease-in-out infinite normal;
     transition: 2s;
-
 }
-@keyframes button{
+
+button:hover {
+    background-color: #732d91;
+}
+
+@keyframes button {
+    0%, 100% {
+        background-color: #8e44ad;
+    }
+    50% {
+        background-color: #732d91;
+    }
+}
+
+@keyframes h1 {
+    0%, 100% {
+        color: #8e44ad;
+    }
+    50% {
+        color: #732d91;
+    }
+}
+
+@keyframes anime {
+    0%, 100% {
+        box-shadow: 0 0 10px #8e44ad, 0 0 20px #8e44ad, 0 0 30px #8e44ad, 0 0 40px #8e44ad;
+    }
+    50% {
+        box-shadow: 0 0 10px #732d91, 0 0 20px #732d91, 0 0 30px #732d91, 0 0 40px #732d91;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #container {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* @keyframes button{
     0%{
 background-color: #3eff8c;
     }
@@ -137,4 +208,4 @@ color: aqua;
         0 0 100px aqua;
 
     }
-}
+} */

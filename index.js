@@ -3,15 +3,15 @@ let mail=document.getElementById("mail");
 let password=document.getElementById("password");
 let button=document.getElementById("button");
 function showP(){
-    if(a.checked){
-        password.type="text";
+    if(document.getElementById("cb").checked){
+        document.getElementById("password").type="text";
         console.log("checked");
     }else{
-        password.type="password";
+        document.getElementById("password").type="password";
         console.log("not checked");
     }
 }
-a.onclick=showP;
+document.getElementById("cb").onclick=showP;
 button.onclick=()=>{
 alert("thank you for loging in");
 password.value="";
