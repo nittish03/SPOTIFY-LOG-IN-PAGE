@@ -1,7 +1,4 @@
-let a=document.getElementById("cbL");
-let mailL=document.getElementById("mailL");
-let passwordL=document.getElementById("passwordL");
-let buttonL=document.getElementById("buttonL");
+
 function showP(){
     if(document.getElementById("cbL").checked){
         document.getElementById("passwordL").type="text";
@@ -12,9 +9,9 @@ function showP(){
     }
 }
 document.getElementById("cbL").onclick=showP;
-buttonL.onclick=(e)=>{
+document.getElementById("buttonL").onclick=(e)=>{
 e.preventDefault();
 alert("thank you for loging in");
-passwordL.value="";
-mailL.value="";
+document.getElementById("passwordL").value="";
+document.getElementById("mailL").value="";
 }
