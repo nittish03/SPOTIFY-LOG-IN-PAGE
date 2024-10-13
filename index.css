@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    width: 20vw;
+    width: 25vw;
     padding: 1vw;
     border-radius: 3%;
     background-color: #ffffff;
@@ -85,6 +85,9 @@ input {
 #containerL h3 {
     color: #666666;
     margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #buttonL {
@@ -133,14 +136,3 @@ input {
     }
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-
-    #containerL h1 {
-        font-size: 20px;
-    }
-
-    #buttonL {
-        font-size: 14px;
-    }
-}
