@@ -6,23 +6,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: 100vh;
+    width: 100vw;
     font-family: 'Roboto', sans-serif;
     background-color: #e0e0e0;
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
+    transition: all 0.2s ease-in-out;
 }
 
-#container {
+#containerL {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
+    width: 20vw;
+    padding: 1vw;
+    border-radius: 3%;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: anime 4s 0s ease-in-out infinite normal;
@@ -32,51 +35,59 @@ body {
 input {
     border: 1px solid #cccccc;
     background-color: #ffffff;
-    border-radius: 5px;
-    height: 40px;
-    font-size: 14px;
-    padding-left: 10px;
-    margin: 10px 0;
+    border-radius: 3%;
+    height: 6vh;
+    font-size: 2vh;
+    padding-left: 4%;
+    margin: 3% 0;
     width: 100%;
     box-sizing: border-box;
 }
-#cb{
-    height: 20px;
+#cbL{
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-#checkbox {
+#checkboxL {
     color: #666666;
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     align-items: center;
-    font-size: 10px;
+    font-size: 60%;
     margin: 10px 0;
+    width: 50%;
 }
-
-#mail {
+#checkboxL p{
+    width: 20vw;
+    font-size: 120%;
+}
+#mailL {
     margin-bottom: 10px;
 }
 
-a {
+#containerL a {
     text-decoration: none;
     color: #8e44ad;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 80%;
+    margin-top: 5%;
 }
 
-h1 {
+#containerL h1 {
     color: #8e44ad;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 3vw;
+    margin-bottom: 4%;
     animation: h1 4s 0s ease-in-out infinite normal;
     transition: 2s;
 }
 
-h3 {
+#containerL h3 {
     color: #666666;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
 }
 
-button {
+#buttonL {
     background-color: #8e44ad;
     color: #ffffff;
     font-weight: bold;
@@ -87,15 +98,15 @@ button {
     margin-bottom: 10px;
     border: none;
     cursor: pointer;
-    animation: button 4s 0s ease-in-out infinite normal;
+    animation: buttonL 4s 0s ease-in-out infinite normal;
     transition: 2s;
 }
 
-button:hover {
+#buttonL:hover {
     background-color: #732d91;
 }
 
-@keyframes button {
+@keyframes buttonL {
     0%, 100% {
         background-color: #8e44ad;
     }
@@ -124,88 +135,15 @@ button:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    #container {
+    #containerL {
         width: 80%;
-        padding: 20px;
+        padding: 15%;
     }
-}
-
-@media (max-width: 480px) {
-    #container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    h1 {
+    #containerL h1 {
         font-size: 20px;
     }
 
-    button {
+    #buttonL {
         font-size: 14px;
     }
 }
-
-
-
-
-/* @keyframes button{
-    0%{
-background-color: #3eff8c;
-    }
-    33%{
-        background-color: #3eff8c;
-    }
-    66%{
-        
-        background-color: aqua;
-    }
-    100%{
-background-color: aqua;
-    }
-}
-@keyframes h1{
-    0%{
-color: #3eff8c;
-    }
-    33%{
-        color: #3eff8c;
-    }
-    66%{
-        color: aqua;
-
-    }
-    100%{
-color: aqua;
-    }
-}
-@keyframes anime{
-    0%{
-        box-shadow: 0 0 1px #3eff8c,
-        0 0 5px #3eff8c,
-        0 0 10px #3eff8c,
-        0 0 15px #3eff8c;
-    
-    }
-    33%{
-       box-shadow: 0 0 5px #3eff8c,
-        0 0 25px #3eff8c,
-        0 0 50px #3eff8c,
-        0 0 100px #3eff8c;
-
-    }
-    66%{
-        box-shadow: 0 0 1px aqua,
-        0 0 5px aqua,
-        0 0 10px aqua,
-        0 0 15px aqua;
-
-    }
-
-    100%{ 
-        box-shadow: 0 0 5px aqua,
-        0 0 25px aqua,
-        0 0 50px aqua,
-        0 0 100px aqua;
-
-    }
-} */
