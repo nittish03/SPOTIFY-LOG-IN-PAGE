@@ -135,10 +135,7 @@ input {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    #containerL {
-        width: 80%;
-        padding: 15%;
-    }
+
     #containerL h1 {
         font-size: 20px;
     }
